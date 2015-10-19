@@ -1,14 +1,26 @@
-COMPUTATIONAL NEURODYNAMICS
----------------------------
+COMPUTATIONAL NEURODYNAMICS COURSE 
+----------------------------------
 
 This is the code repository for the Computational Neurodynamics course at the
 Department of Computing, Imperial College London (course code C421).
 
 Course taught by Prof. Murray Shanahan (www.doc.ic.ac.uk/~mpsha) with the help
-of the members of the Neurodynamics lab (neurodynamics.doc.ic.ac.uk).
+of the members of the Neurodynamics lab (http://neurodynamics.doc.ic.ac.uk).
 
-NEWS
-----
 
-18.X.2015: Added code and problem sheet for Exercise 1.
+# Important information
+
+Lab sessions take place **every Tuesday at 11am in Huxley room 202/206**.
+During the lab sessions you are supposed to go through the problem sheet
+corresponding to the contents of the previous lecture. You are expected
+to have read the lecture notes before the lab session.
+
+The lab helpers are there to answer questions, **not to debug code**.
+They will be happy to assist you and walk you through any part of the
+material you might be struggling with.
+
+
+# News
+
+- 18.X.2015: Added code and problem sheet for Exercise 1.
 
