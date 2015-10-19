@@ -1,4 +1,4 @@
-COMPUTATIONAL NEURODYNAMICS COURSE 
+Computational Neurodynamics Course 
 ----------------------------------
 
 This is the code repository for the Computational Neurodynamics course at the
@@ -8,7 +8,7 @@ Course taught by Prof. Murray Shanahan (www.doc.ic.ac.uk/~mpsha) with the help
 of the members of the Neurodynamics lab (http://neurodynamics.doc.ic.ac.uk).
 
 
-# Important information
+## Important information
 
 Lab sessions take place **every Tuesday at 11am in Huxley room 202/206**.
 During the lab sessions you are supposed to go through the problem sheet
@@ -19,8 +19,16 @@ The lab helpers are there to answer questions, **not to debug code**.
 They will be happy to assist you and walk you through any part of the
 material you might be struggling with.
 
+I'll be publishing important information and updates in this repo. The
+recommended course of action is:
 
-# News
+1. If you have a Github account, click on the "Watch" button above to receive
+notifications.
+2. If you don't have a Github account, create a Github account and proceed to
+**1**.
+
+## News
 
 - 18.X.2015: Added code and problem sheet for Exercise 1.
+- 19.X.2015: Replaced .docx files with .pdf files to make equations readable.
 
