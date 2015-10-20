@@ -55,3 +55,17 @@ docs/_build/
 
 # PyBuilder
 target/
+
+# Latex
+*.aux
+*.auxlock
+*.log
+*.nav
+*.out
+*.pdf
+*.snm
+*.synctex.gz
+*.toc
+*.vrb
+external/
+
