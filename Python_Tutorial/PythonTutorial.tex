@@ -1,6 +1,6 @@
 
 
-\documentclass[xcolor=x11names, compress,handout]{beamer}
+\documentclass[xcolor=x11names, compress]{beamer}
 
 %% General document %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{graphicx}
@@ -261,7 +261,7 @@ emphstyle={\color{self}\slshape},
   {\includegraphics[width=0.7\textwidth]{logo3.png}}\\ \vspace{-10pt}
 
 
-  \ver{pmediano@ic.ac.uk} \hspace{20pt} \ver{m.garnelo@ic.ac.uk}
+  \ver{pmediano@ic.ac.uk} \hspace{20pt} \ver{garnelo@ic.ac.uk}
 \end{center}
 \end{frame}
 
@@ -312,19 +312,11 @@ Completely legitimate question:
 \textbf{The import system}
 
 \begin{itemize}
-	\item Often the definitions (e.g. functions) we want to use might be stored in a different script called \textit{module}.
+	\item Often the definitions (e.g. functions) we want to use might be stored in a different script, i.e. another \textit{module}.
 	\item In order to use definitions from other modules we need to import these modules at the beginning of our script.
-	\item This is done via the command \textit{import} 
-% 			\begin{lstlisting}[xleftmargin=.2\textwidth]
-% 				import numpy 
-% 			\end{lstlisting}
+	\item This is done via the \textit{import} command: 
   \mint{python}@    import numpy@
-	\item If the name of the module is long we can set a new abbreviation for it
-% 			\begin{lstlisting}[xleftmargin=.2\textwidth]
-% 				import numpy as np
-% 			\end{lstlisting}
   \mint{python}@    import numpy as np@
-	\item We can also load specific definitions:
   \begin{minted}{python}
     from scipy import *
     from matplotlib import pyplot
@@ -340,21 +332,21 @@ Completely legitimate question:
 \begin{frame}[fragile]{Python basics}
 \textbf{Classes}
 \begin{itemize}
-\item Classes are blueprints for creating objects
-\item Classes can contain functions that are applied to objects from that class
+  \item Classes can contain \emph{members} and \emph{methods}.
+  \item The constructor is the reserved method \verb@__init__@
 \end{itemize}
 
 \begin{minted}{python}
-class Shape:
-    def __init__(self, x , y):
-        self.x = x
-        self.y = y
+        class Shape:
+            def __init__(self, x , y):
+                self.x = x
+                self.y = y
 
-    def area(self):
-        return self.x * self.y
+            def area(self):
+                return self.x * self.y
 
-rectangle = Shape(100, 45)
-print rectangle.area()
+        rectangle = Shape(100, 45)
+        print rectangle.area()
 \end{minted}
 
 \end{frame}
@@ -381,6 +373,8 @@ else:
 \item Mind that beginnings of blocks are indicated with a colon ":"
 \end{itemize}
 
+\pause
+
 \textbf{0 - indexing}
 \begin{itemize}
 \item The index of the first element in python is 0
@@ -400,7 +394,6 @@ else:
 
 First piece of advice:
 
-% \vfill
 \pause
 \vspace{10pt}
 
@@ -409,7 +402,6 @@ First piece of advice:
 \end{itemize}
 
 \vspace{20pt}
-% \btVFill
 
 \begin{figure}[b]
   \centering
@@ -480,6 +472,7 @@ First piece of advice:
   \end{description}
 
   \vspace{10pt}
+  \pause
 
   \(
   \<{0.6\linewidth}
@@ -508,6 +501,7 @@ First piece of advice:
   \)
 
   \vspace{25pt}
+  \pause
 
   We recommend to use always \textbf{\texttt{np.array}}.
 
@@ -544,15 +538,19 @@ First piece of advice:
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{ \scshape Tools}
-\subsection{Development environments}
-\begin{frame}{Development environments}
+\subsection{Development tools}
+\begin{frame}{Development tools}
 
-  \large
+  \Large
   \begin{itemize}
-    \item Vim + terminal
-    \item Spyder
-    \item Atom
+    \newcommand{\myitem}{\vfill \pause \item}
+    \myitem Editor + terminal
+    \myitem Spyder
+    \myitem iPython (notebook)
   \end{itemize}
+
+  \vfill
+  \pause
 
   Remember to use a debugger! \\
   ~ ~ $\rightarrow$ \textbf{pdb}
@@ -562,7 +560,7 @@ First piece of advice:
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Virtual environments and packages}
-\begin{frame}{Logistics}
+\begin{frame}{Logistics and installation}
 
   \large
 
@@ -573,12 +571,14 @@ First piece of advice:
     \item If you still don't have access to the DoC machines, talk with me ASAP!
 
   \vfill
+  \pause
 
     \item No mortal is allowed to install programs on the DoC machines, so we'll
   use Python's \textbf{virtualenv}.
 
   \begin{itemize}
-    \item A \emph{virtual environment} is a Python island.
+    \item A \emph{virtual environment} is a small Python bubble.
+    \vspace{3pt}
     \item You can~ \ver{pip install} packages inside without requiring permissions.
   \end{itemize}
 
@@ -592,15 +592,13 @@ First piece of advice:
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[fragile]{Virtual environments and new packages}
+\begin{frame}[fragile]{Virtual environment}
 
   \begin{itemize}
     \item Setting up your \ver{virtualenv}:
   \end{itemize}
+
   \begin{minted}[bgcolor=aliceblue]{bash}
-    cd /vol/bitbucket
-    mkdir <YOURUSERNAME>
-    cd <YOURUSERNAME>
     virtualenv venv
     cd venv
     source bin/activate
@@ -613,7 +611,7 @@ First piece of advice:
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[fragile]{Virtual environments and new packages}
+\begin{frame}[fragile]{Virtual environment}
 
   \begin{itemize}
     \item To install Spyder:
@@ -647,7 +645,7 @@ First piece of advice:
     \item NumPy for Matlab users:
 
     \vspace{5pt}
-    {\scriptsize \centering \url{http://wiki.scipy.org/NumPy_for_Matlab_Users}\\}
+    {\scriptsize \centering \url{http://mathesaurus.sourceforge.net/matlab-numpy.html}\\}
 
     \vspace{8pt}
     \item Using Vim as a Python IDE:
@@ -681,7 +679,6 @@ First piece of advice:
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 {
-  \setbeamercolor{background canvas}{bg=black}
   \usebackgroundtemplate{\includegraphics[width=\paperwidth, clip, trim=80 0 80 0]{HolyGrail065}}
 \begin{frame}[plain, noframenumbering]
 \end{frame}
