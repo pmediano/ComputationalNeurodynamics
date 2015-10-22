@@ -29,6 +29,7 @@ notifications.
 
 ## News
 
-- 18.X.2015: Added code and problem sheet for Exercise 1.
+- 22.X.2015: Added slides for the Python tutorial. Added some code for Ex2.
 - 19.X.2015: Replaced .docx files with .pdf files to make equations readable.
+- 18.X.2015: Added code and problem sheet for Exercise 1.
 
