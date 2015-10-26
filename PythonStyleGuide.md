@@ -38,7 +38,9 @@ comments to start with '# '.
 To stop flake8 from complaining all the time about these, I style-check my
 python scripts with the following command:
 
+```
 flake8 myFancyScript.py | grep -Ev 'E221|E111|E265|W391'
+```
 
 **Some marks of the assessed coursework are reserved for style and clarity**.
 We won't strictly enforce all PEP8 guidelines, but it's probably a good idea
