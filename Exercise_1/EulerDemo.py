@@ -11,9 +11,9 @@ simulation using the Euler method, for two different step sizes.
 import numpy as np
 import matplotlib.pyplot as plt
 
-dt = 0.001     # Step size for exact solution
-dt_small = 0.1 # Small integration step
-dt_large = 0.5 # Large integration step
+dt = 0.001      # Step size for exact solution
+dt_small = 0.1  # Small integration step
+dt_large = 0.5  # Large integration step
 
 # Create time points
 Tmin = 0
@@ -29,14 +29,14 @@ y_large = np.zeros(len(T_large))
 y = np.exp(T)
 
 # Approximated solution with small integration Step
-y_small[0] = np.exp(Tmin) # Initial value
+y_small[0] = np.exp(Tmin)  # Initial value
 for t in xrange(1, len(T_small)):
-  y_small[t] = y_small[t-1] + dt_small*y_small[t-1]  
+  y_small[t] = y_small[t-1] + dt_small*y_small[t-1]
 
 # Approximated solution with large integration Step
-y_large[0] = np.exp(Tmin) # Initial value
+y_large[0] = np.exp(Tmin)  # Initial value
 for t in xrange(1, len(T_large)):
-  y_large[t] = y_large[t-1] + dt_large*y_large[t-1]   
+  y_large[t] = y_large[t-1] + dt_large*y_large[t-1]
 
 # Plot the results
 plt.plot(T      , y      , 'b', label='Exact solution of y = $e^t$')

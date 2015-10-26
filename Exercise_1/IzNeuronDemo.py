@@ -52,15 +52,15 @@ u[0] = -1
 for t in xrange(len(T)-1):
   # Update v and u according to Izhikevich's equations
   v[t+1] = v[t] + dt*(0.04*v[t]**2 + 5*v[t] + 140 - u[t] + I)
-  u[t+1] = u[t] + dt*(a * (b*v[t] - u[t]) )
-  
+  u[t+1] = u[t] + dt*(a * (b*v[t] - u[t]))
+
   # Reset the neuron if it has spiked
   if v[t+1] >= 30:
     v[t]   = 30          # Add a Dirac pulse for visualisation
     v[t+1] = c           # Reset to resting potential
     u[t+1] = u[t+1] + d  # Update recovery variable
-    
-    
+
+
 ## Plot the membrane potential
 plt.subplot(211)
 plt.plot(T, v)

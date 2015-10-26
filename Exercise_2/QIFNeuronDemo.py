@@ -42,8 +42,8 @@ for t in range(len(T)-1):
   if v[t+1] >= 30:
     v[t]   = 30  # Add Dirac pulse for visualisation
     v[t+1] = vr
-    
-    
+
+
 ## Plot the membrane potential
 plt.plot(T, v)
 plt.xlabel('Time (ms)')
