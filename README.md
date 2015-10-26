@@ -29,6 +29,8 @@ notifications.
 
 ## News
 
+- 26.X.2015: Added Python style guide.
+- 26.X.2015: Added Ex1 solutions and the rest of Ex2.
 - 22.X.2015: Added slides for the Python tutorial. Added some code for Ex2.
 - 19.X.2015: Replaced .docx files with .pdf files to make equations readable.
 - 18.X.2015: Added code and problem sheet for Exercise 1.
