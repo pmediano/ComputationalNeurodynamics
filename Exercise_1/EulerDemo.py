@@ -40,8 +40,8 @@ for t in xrange(1, len(T_large)):
 
 # Plot the results
 plt.plot(T      , y      , 'b', label='Exact solution of y = $e^t$')
-plt.plot(T_small, y_small, 'g', label='Euler method $\delta$ t = 0.1')
-plt.plot(T_large, y_large, 'r', label='Euler method $\delta$ t = 0.5')
+plt.plot(T_small, y_small, 'g', label='Euler method $\delta$ t = ' + str(dt_small))
+plt.plot(T_large, y_large, 'r', label='Euler method $\delta$ t = ' + str(dt_large))
 plt.xlabel('t')
 plt.ylabel('y')
 plt.legend(loc=0)
