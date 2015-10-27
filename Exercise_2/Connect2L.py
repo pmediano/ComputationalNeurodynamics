@@ -32,7 +32,7 @@ def Connect2L(N0, N1):
   # multiply r by zero.)
 
   # Layer 0 (regular spiking)
-  r = rn.rand(N1)
+  r = rn.rand(N0)
   net.layer[0].N = N0
   net.layer[0].a = 0.02 * np.ones(N0)
   net.layer[0].b = 0.20 * np.ones(N0)
