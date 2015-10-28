@@ -64,9 +64,9 @@ for t in xrange(len(T)-1):
 
   # Calculate the four constants of Runge-Kutta method
   k_1 = s_dt(s[t], I)
-  k_2 = s_dt(s[t], I) + 0.5*dt*k_1
-  k_3 = s_dt(s[t], I) + 0.5*dt*k_2
-  k_4 = s_dt(s[t], I) + dt*k_3
+  k_2 = s_dt(s[t] + 0.5*dt*k_1, I)
+  k_3 = s_dt(s[t] + 0.5*dt*k_2, I)
+  k_4 = s_dt(s[t] + dt*k_3, I)
 
   s[t+1] = s[t] + (1.0/6)*dt*(k_1 + 2*k_2 + 2*k_3 + k_4)
 
