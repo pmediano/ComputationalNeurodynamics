@@ -68,3 +68,6 @@ target/
 *.vrb
 external/
 
+# LibreOffice Writer documents
+*.docx
+

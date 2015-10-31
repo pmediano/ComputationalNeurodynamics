@@ -85,21 +85,23 @@ plt.ylabel('Voltage (mV)')
 plt.xlabel('Time (ms)')
 
 ## Raster plots of firings
-plt.figure(3)
-plt.subplot(211)
-plt.scatter(firings1[:, 0], firings1[:, 1] + 1, marker='.')
-plt.xlim(0, T)
-plt.ylabel('Neuron number')
-plt.ylim(0, N1+1)
-plt.title('Population 1 firings')
+if firings1.size != 0:
+  plt.figure(3)
+  plt.subplot(211)
+  plt.scatter(firings1[:, 0], firings1[:, 1] + 1, marker='.')
+  plt.xlim(0, T)
+  plt.ylabel('Neuron number')
+  plt.ylim(0, N1+1)
+  plt.title('Population 1 firings')
 
-plt.subplot(212)
-plt.scatter(firings2[:, 0], firings2[:, 1] + 1, marker='.')
-plt.xlim(0, T)
-plt.ylabel('Neuron number')
-plt.ylim(0, N2+1)
-plt.xlabel('Time (ms)')
-plt.title('Population 2 firings')
+if firings2.size != 0:
+  plt.subplot(212)
+  plt.scatter(firings2[:, 0], firings2[:, 1] + 1, marker='.')
+  plt.xlim(0, T)
+  plt.ylabel('Neuron number')
+  plt.ylim(0, N2+1)
+  plt.xlabel('Time (ms)')
+  plt.title('Population 2 firings')
 
 plt.show()
 

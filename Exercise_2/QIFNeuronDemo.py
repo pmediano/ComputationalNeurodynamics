@@ -2,7 +2,7 @@
 Computational Neurodynamics
 Exercise 2
 
-Simulates a Quadratic Integrate-and-fire neuron using
+Simulates a Quadratic Integrate-and-Fire neuron using
 the Euler method.
 
 (C) Murray Shanahan et al, 2015

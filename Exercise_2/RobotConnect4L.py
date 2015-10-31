@@ -13,7 +13,7 @@ from IzNetwork import IzNetwork
 def RobotConnect4L(Ns, Nm):
   """
   Construct four layers of Izhikevich neurons and connect them together.
-  Layers 0 and 1 comprise sensory neurons, while layesr 2 and 3 comprise
+  Layers 0 and 1 comprise sensory neurons, while layers 2 and 3 comprise
   motor neurons. Sensory neurons excite contralateral motor neurons causing
   seeking behaviour. Layers are heterogenous populations of Izhikevich
   neurons with slightly different parameter values.
