@@ -16,6 +16,7 @@ from Environment import Environment
 from RobotConnect4L import RobotConnect4L
 from RobotUpdate import RobotUpdate
 
+
 ## Create the environment
 print 'Initialising environment'
 xmax = 100
@@ -74,8 +75,7 @@ plt.title('Robot controlled by spiking neurons')
 plt.xlabel('X')
 plt.ylabel('Y')
 for Ob in Env.Obs:
-  color = np.random.rand(10)
-  plt.scatter(Ob['x'], Ob['y'], s=np.pi*(Ob['r']**2), c=color)
+  plt.scatter(Ob['x'], Ob['y'], s=np.pi*(Ob['r']**2), c='lime')
 
 plt.ion()
 plt.show()

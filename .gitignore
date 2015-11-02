@@ -71,3 +71,7 @@ external/
 # LibreOffice Writer documents
 *.docx
 
+# Vim is the one true editor. But we don't want temporary files in git
+*.swp
+*.swo
+
