@@ -29,6 +29,7 @@ notifications.
 
 ## News
 
+- 2.XI.2015: Added code for Ex3.
 - 2.XI.2015: Added Ex2 solutions.
 - 26.X.2015: Added Python style guide.
 - 26.X.2015: Added Ex1 solutions and the rest of Ex2.
