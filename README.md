@@ -29,6 +29,7 @@ notifications.
 
 ## News
 
+- 5.XI.2015: Added specifications for assessed coursework, Ex4.
 - 2.XI.2015: Added code for Ex3.
 - 2.XI.2015: Added Ex2 solutions.
 - 26.X.2015: Added Python style guide.
