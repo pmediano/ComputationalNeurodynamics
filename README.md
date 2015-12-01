@@ -29,6 +29,7 @@ notifications.
 
 ## News
 
+- 1.XII.2015: Added slides and references from the advanced Kuramoto lecture.
 - 30.XI.2015: Added code for Ex5.
 - 30.XI.2015: Added Ex3 solutions.
 - 5.XI.2015: Added specifications for assessed coursework, Ex4.
