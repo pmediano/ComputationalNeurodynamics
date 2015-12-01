@@ -81,8 +81,6 @@ def Sync2Connect(N1, N2):
   net.layer[2].S[3] = -1.0*rn.rand(N1, N2)
 
   # Excitatory to excitatory connections
-  # TODO: in Murray's original code, these networks are symmetric.
-  # Should we do that here too?
   net.layer[0].S[0] = 1*(rn.rand(N1, N1) < 0.01)
   net.layer[2].S[2] = 1*(rn.rand(N1, N1) < 0.01)
 
