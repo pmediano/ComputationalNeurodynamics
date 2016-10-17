@@ -1,11 +1,10 @@
 Notes about coding style
 -----------------------
 
-As noted by one of your colleagues after the tutorial, good coding style is
+As known by every decent computer scientist ever, good coding style is
 fundamental. It is specially important when someone has to mark your code. To
-help yourself write pretty Python code, your anonymous style-hero classmate and
-I recommend the package `flake8`, that you can easily pip inside your virtual
-environment:
+help yourself write pretty Python code, I recommend the package `flake8`, that
+you can easily pip inside your virtual environment:
 
 ```
 pip install flake8
