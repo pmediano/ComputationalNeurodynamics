@@ -2,7 +2,7 @@ Computational Neurodynamics Course
 ----------------------------------
 
 This is the code repository for the Computational Neurodynamics course at the
-Department of Computing, Imperial College London (course code C421).
+Department of Computing, Imperial College London (course code C421H).
 
 Course taught by Prof. Murray Shanahan (www.doc.ic.ac.uk/~mpsha) with the help
 of the members of the Neurodynamics lab (http://neurodynamics.doc.ic.ac.uk).
@@ -10,7 +10,7 @@ of the members of the Neurodynamics lab (http://neurodynamics.doc.ic.ac.uk).
 
 ## Important information
 
-Lab sessions take place **every Tuesday at 11am in Huxley room 202/206**.
+Lab sessions take place **every Tuesday at 5pm in Huxley room 202/206**.
 During the lab sessions you are supposed to go through the problem sheet
 corresponding to the contents of the previous lecture. You are expected
 to have read the lecture notes before the lab session.
@@ -27,8 +27,13 @@ notifications.
 2. If you don't have a Github account, create a Github account and proceed to
 **1**.
 
+This repository contains material for the 2015 and the 2016 editions of the
+course. You're welcome to have a look at both, but note that some of the 2015
+material will not be covered this year.
+
 ## News
 
+- 18.X.2016: Updated readme and added first two exercises for the 2016 course.
 - 1.XII.2015: Added slides and references from the advanced Kuramoto lecture.
 - 30.XI.2015: Added code for Ex5.
 - 30.XI.2015: Added Ex3 solutions.
