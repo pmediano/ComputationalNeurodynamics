@@ -6,6 +6,9 @@ Simulates the movement of a robot with differential wheels under the
 control of a spiking neural network. The simulation runs for a very
 long time --- if you get bored, press Ctrl+C a couple of times.
 
+**Note**: this code may not work properly in Ubuntu 16.04. See RobotRun4L-u16.py
+for a 16.04-compatible version.
+
 (C) Murray Shanahan et al, 2016
 """
 
@@ -79,7 +82,6 @@ plt.show()
 print 'Start simulation'
 for t in xrange(len(T)):
   # Input from Sensors
-  # SL, SR = RobotGetSensors(Env, x[t], y[t], w[t], xmax, ymax)
   SL, SR = Env.GetSensors(x[t], y[t], w[t])
 
   RL_spikes = 0.0
