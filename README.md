@@ -33,6 +33,7 @@ material will not be covered this year.
 
 ## News
 
+- 8.XI.2016: Added specs for Ex4.
 - 31.X.2016: Added specs and code for Ex3.
 - 18.X.2016: Updated readme and added first two exercises for the 2016 course.
 - 1.XII.2015: Added slides and references from the advanced Kuramoto lecture.
