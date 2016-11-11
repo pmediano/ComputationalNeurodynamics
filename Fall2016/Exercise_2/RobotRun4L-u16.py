@@ -99,6 +99,13 @@ for Ob in Env.Obs:
 
 manager2 = pylab.get_current_fig_manager()
 
+# You can change the interval duration to make the video faster or slower
+timer = fig2.canvas.new_timer(interval=200)
+
+def StopSimulation():
+  global timer
+  timer.stop()
+
 t = 0
 
 ## SIMULATE
@@ -156,10 +163,13 @@ def RobotStep(args):
 
   t += 1
 
-# Get the thing going. You can change the interval duration to make the
-# video faster or slower
-timer = fig2.canvas.new_timer(interval=200)
+  if t == len(x)-1:
+    print 'Terminating simulation'
+    StopSimulation()
+
+# Get the thing going
 timer.add_callback(RobotStep, ())
 timer.start()
 
 pylab.show()
+
